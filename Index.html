@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fabio Piana - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lexend:wght@600&amp;family=Work+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "secondary-container": "#d5e0f7",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e2e3d9",
+                        "on-surface-variant": "#43493c",
+                        "secondary-fixed": "#d8e3fa",
+                        "surface-container-high": "#e8e9df",
+                        "surface-light": "#F7FAFC",
+                        "surface-container-low": "#f3f5ea",
+                        "surface-tint": "#40691d",
+                        "on-tertiary": "#ffffff",
+                        "nature-green": "#74A14E",
+                        "on-background": "#1a1c16",
+                        "outline": "#73796a",
+                        "primary-container": "#74a14e",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9faf0",
+                        "on-secondary-container": "#586377",
+                        "outline-variant": "#c3c9b8",
+                        "surface-bright": "#f9faf0",
+                        "on-secondary-fixed": "#111c2c",
+                        "on-error": "#ffffff",
+                        "text-main": "#1A202C",
+                        "inverse-on-surface": "#f0f2e7",
+                        "primary-fixed": "#c0f194",
+                        "tertiary-fixed-dim": "#ffade1",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#732c5f",
+                        "surface-dim": "#d9dbd1",
+                        "on-primary-fixed-variant": "#295003",
+                        "surface": "#f9faf0",
+                        "on-primary-fixed": "#0c2000",
+                        "border-subtle": "#E2E8F0",
+                        "surface-container-highest": "#e2e3d9",
+                        "inverse-surface": "#2f312a",
+                        "text-muted": "#718096",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-tertiary-container": "#541044",
+                        "secondary": "#545f72",
+                        "primary-fixed-dim": "#a4d47b",
+                        "tertiary-fixed": "#ffd8ed",
+                        "on-tertiary-fixed": "#3b002f",
+                        "primary": "#40691d",
+                        "tech-slate": "#2D3748",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#a4d47b",
+                        "tertiary": "#8f4478",
+                        "surface-container": "#edefe4",
+                        "on-primary-container": "#173400",
+                        "tertiary-container": "#cd79b1",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1a1c16",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "80px",
+                        "margin-page": "32px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "card-padding": "32px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Lexend"],
+                        "h1": ["Work Sans"],
+                        "h2": ["Work Sans"],
+                        "h3": ["Work Sans"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased pt-[80px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 border-b border-outline-variant/30 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-margin-page py-4 max-w-container-max mx-auto">
+<div class="font-h3 text-h3 font-bold text-primary dark:text-primary-fixed-dim tracking-tight">
+                Fabio Piana
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-semibold font-label-caps text-label-caps hover:bg-primary/5 dark:hover:bg-primary-fixed/5 transition-all duration-200" href="#home">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-caps text-label-caps hover:bg-primary/5 dark:hover:bg-primary-fixed/5 transition-all duration-200" href="#esperienze">Esperienze</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-caps text-label-caps hover:bg-primary/5 dark:hover:bg-primary-fixed/5 transition-all duration-200" href="#competenze">Competenze</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-caps text-label-caps hover:bg-primary/5 dark:hover:bg-primary-fixed/5 transition-all duration-200" href="#gallery">Gallery</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-label-caps text-label-caps hover:bg-primary/5 dark:hover:bg-primary-fixed/5 transition-all duration-200" href="#contatti">Contatti</a>
+</div>
+<button class="hidden md:block bg-nature-green text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:bg-surface-tint transition-colors shadow-sm">
+                Scarica CV
+            </button>
+<!-- Mobile Menu Icon (Placeholder functionality) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex items-center justify-center px-margin-page py-section-gap overflow-hidden" id="home">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-20" data-alt="A sophisticated abstract background blending elements of nature and technology. Smooth, flowing lines resembling topography maps intersect with subtle digital circuit board patterns. The color palette features a mix of fresh, organic greens and crisp, technical slates over a bright, clean white background, perfectly encapsulating a modern 'Nature-Tech' corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3xU1sr-ewDd-tCoiqQf7psVDYhQmI-4z31s2mrlWYH67RiLE--ZXRzamLWdmvJEgeod4U41wBtlzc2NaZVXaz0HTlPpvDrJBJtnc0b_YiJvgvDLuNnr9nRek6atDYQvil3oUzRxGrgZeHCHXXiueDdgF2HSUc5lmsLE-7Oa_nkd3lweZLKmolTnb7w7gSKI_zU0KsO__EwDb0Xok9F7diMVGd0DQOxVrNzLHVQjLw3FEJAY47JcPJg6PEiOIJRUp9ddzordkgqLk"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background/50 to-background"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto text-center flex flex-col items-center gap-6">
+<h1 class="font-h1 text-h1 text-text-main max-w-4xl">
+                    Fabio Piana: Tra Sport, Sociale e Informatica
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                    Costruire soluzioni, allenare talenti, includere persone.
+                </p>
+<div class="mt-8 flex gap-4">
+<a class="bg-nature-green text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:bg-surface-tint transition-colors shadow-sm flex items-center gap-2" href="#esperienze">
+                        Scopri il Profilo <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Esperienze Section -->
+<section class="w-full py-section-gap px-margin-page bg-surface-container-low" id="esperienze">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-h2 text-h2 text-primary mb-12">Esperienze</h2>
+<div class="flex flex-col gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-card-padding rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-surface-container-highest flex flex-col md:flex-row gap-8 items-start">
+<div class="bg-primary-container/10 p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="sports_volleyball">sports_volleyball</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4">
+<h3 class="font-h3 text-h3 text-text-main">Special Olympics</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps whitespace-nowrap">Inclusione &amp; Empatia</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+                                Supporto tecnico e motivazionale ad atleti con disabilità intellettiva. Mi sono occupato dell'adattamento metodologico degli esercizi di pallavolo, garantendo un ambiente inclusivo e facilitando la comprensione delle dinamiche di gioco durante gli allenamenti e le competizioni.
+                            </p>
+<div class="mt-4">
+<a href="SPECIAL-OLYMPICS.html" class="inline-flex items-center gap-2 bg-nature-green text-on-primary px-5 py-2 rounded-full font-label-caps text-label-caps hover:bg-surface-tint transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">arrow_forward</span> Scopri di più
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-card-padding rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-surface-container-highest flex flex-col md:flex-row gap-8 items-start">
+<div class="bg-primary-container/10 p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="sports_tennis">sports_tennis</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4">
+<h3 class="font-h3 text-h3 text-text-main">Maestro Tennis - CRE</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps whitespace-nowrap">Leadership &amp; Gestione</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+                                Responsabile della formazione sportiva e dell'animazione per gruppi giovanili. Ho gestito l'organizzazione di tornei, l'arbitraggio e la pianificazione giornaliera delle attività, sviluppando doti di leadership, gestione del tempo e mediazione dei conflitti in contesti dinamici.
+                            </p>
+<div class="mt-4">
+<a href="Tennis.html" class="inline-flex items-center gap-2 bg-nature-green text-on-primary px-5 py-2 rounded-full font-label-caps text-label-caps hover:bg-surface-tint transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">arrow_forward</span> Scopri di più
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-card-padding rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-surface-container-highest flex flex-col md:flex-row gap-8 items-start">
+<div class="bg-primary-container/10 p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="memory">memory</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4">
+<h3 class="font-h3 text-h3 text-text-main">Tecnico IT - Casa di Cura San Francesco</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps whitespace-nowrap">Hard Skills &amp; Networking</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+                                Interventi tecnico-operativi su infrastrutture IT in ambito sanitario. Mi sono occupato della riqualificazione hardware (PC/Workstation), installazione di sistemi operativi e supporto su software specifici (Zimbra, Priamo). Ho inoltre eseguito il censimento degli asset aziendali e collaborato all'ottimizzazione dei sistemi di prenotazione online.
+                            </p>
+<div class="mt-4">
+<a href="Tecnico-san-francesco.html" class="inline-flex items-center gap-2 bg-nature-green text-on-primary px-5 py-2 rounded-full font-label-caps text-label-caps hover:bg-surface-tint transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">arrow_forward</span> Scopri di più
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Competenze Section -->
+<section class="w-full py-section-gap px-margin-page bg-background" id="competenze">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-h2 text-h2 text-primary mb-12 text-center">Competenze</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Soft Skills -->
+<div class="bg-surface-container-low p-8 rounded-xl border border-surface-container">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="psychology">psychology</span>
+<h3 class="font-h3 text-h3 text-text-main">Soft Skills</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-surface-container-lowest text-text-main px-4 py-2 rounded-full border border-border-subtle font-label-caps text-label-caps flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-nature-green"></span> Empatia
+                            </span>
+<span class="bg-surface-container-lowest text-text-main px-4 py-2 rounded-full border border-border-subtle font-label-caps text-label-caps flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-nature-green"></span> Leadership
+                            </span>
+<span class="bg-surface-container-lowest text-text-main px-4 py-2 rounded-full border border-border-subtle font-label-caps text-label-caps flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-nature-green"></span> Problem Solving
+                            </span>
+</div>
+</div>
+<!-- Hard Skills -->
+<div class="bg-surface-container-low p-8 rounded-xl border border-surface-container">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="terminal">terminal</span>
+<h3 class="font-h3 text-h3 text-text-main">Hard Skills</h3>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-surface-container-lowest text-text-main px-4 py-2 rounded-full border border-border-subtle font-label-caps text-label-caps flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tech-slate"></span> Hardware Repair
+                            </span>
+<span class="bg-surface-container-lowest text-text-main px-4 py-2 rounded-full border border-border-subtle font-label-caps text-label-caps flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tech-slate"></span> OS Configuration
+                            </span>
+<span class="bg-surface-container-lowest text-text-main px-4 py-2 rounded-full border border-border-subtle font-label-caps text-label-caps flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tech-slate"></span> Networking
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="w-full py-section-gap px-margin-page bg-surface-container-low" id="gallery">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-h2 text-h2 text-primary mb-12">Gallery 'Nature-Tech'</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm border border-surface-container">
+<img alt="" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A dynamic, high-quality photograph of an indoor volleyball match in a modern, well-lit sports facility. The image captures athletes in mid-air action at the net. The lighting is bright and clean, emphasizing the structured, energetic atmosphere. The color palette highlights pristine white lines and warm wooden floors, reflecting a professional sporting environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm6saujNEyWs8QiyMd6Qnk3w9m2tR6A4Y1NqVWQ_p1foP5OEojn-0_-3Pkqykx79kXntxcYmYK3Ji6W10jQwav6EOymk98MB_BteLALQofOKFWu2_IG-nWN0drsp-cyXzLEflnLpl2xVKAHfI6BM0nB3h4Sl8PmLz5oUHdIZGl0hZQzWzIev7gfmDts5mjDgY7m3p-J0eWphTuBPb1KibpgOJBMlaMhhOKlrZiiiLvOdCUUvCtHmKU0YJ1MBOSlKdQwTFvZo80JdU"/>
+</div>
+<div class="group overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm border border-surface-container">
+<img alt="" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A macro shot of a sophisticated computer motherboard glowing with subtle green LED lights. The intricate circuitry and microchips are sharply in focus against a dark, technical slate background. The image exudes a sense of high-performance engineering and precision technology, perfectly aligned with modern IT professional aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxoaP_qbxgYehLtVQU9MeMGlwEF1x_DnRIOFEbiK-k5v8Nma4kS9I27Ig4IQU93KtaFRXM3NPjMCW5l8ZnwRuhUJ0Q9ZeHs5rcGgmervcguxZvG6KIcRL2Wc7Oe8m58gR09eUXPKfUDGBeGxgapi2cY0oDSvyfbwNUF2kgBSbOnidM5mTzU_CIAef5BKBgIJdeu7FxPv343ecnpjXxQUbamr5APMmSCDV28_JRv7zVnV1wV5yHdZPBNezzokhOSEH8PYyO5qjHmVE"/>
+</div>
+<div class="group overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm border border-surface-container">
+<img alt="" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="An energetic outdoor tennis match captured on a vibrant clay court under bright sunlight. The player is seen striking a powerful forehand. The lush green nature surrounding the court contrasts beautifully with the bright red clay. The image conveys leadership, dynamism, and a strong connection to outdoor sports." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSuf0FtGIXKcHBv5YdnzsD3-D1g4IBCOZ7vVhArBW1HCrJMqysapePoxp5_ot-N_1G_bmvJPLDZmOOA0Xry6KFHGnfU6A5xwlW4d9aCSivYEp5VQs-QJw6MDtcwRPYjwdvqWpcymtyawsEcZa_JQ461I4EGJXAfmdPEgODfjdwqoIsUBQVPYieDHQZfCmssRKc5nIy_ffeXPa3D5gyy2sYhGOKbFqDHPl7_ElUtAeI8ojy0vPPLRfG0TPAdVzJWSTYFJoWM2zHHRI"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant/20" id="contatti">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-page max-w-container-max mx-auto gap-gutter">
+<div class="font-h3 text-h3 font-bold text-primary dark:text-primary-fixed-dim">
+                Fabio Piana
+            </div>
+<div class="flex gap-6">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all font-label-caps text-label-caps flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="work">work</span> LinkedIn
+                </a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all font-label-caps text-label-caps flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="code">code</span> GitHub
+                </a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all font-label-caps text-label-caps flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span> Email
+                </a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all font-label-caps text-label-caps" href="#">
+                    Privacy Policy
+                </a>
+</div>
+<div class="font-body-md text-body-md text-secondary">
+                © 2024 Fabio Piana. Precisione Tecnica, Spirito Naturale.
+            </div>
+</div>
+</footer>
+</body></html>

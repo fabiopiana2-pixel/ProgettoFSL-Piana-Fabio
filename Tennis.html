@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fabio Piana - Maestro Tennis</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lexend:wght@600&amp;family=Work+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface-variant": "#43493c",
+                      "surface-light": "#F7FAFC",
+                      "surface-container-highest": "#e2e3d9",
+                      "outline-variant": "#c3c9b8",
+                      "inverse-primary": "#a4d47b",
+                      "surface-dim": "#d9dbd1",
+                      "on-tertiary": "#ffffff",
+                      "secondary": "#545f72",
+                      "on-error-container": "#93000a",
+                      "text-main": "#1A202C",
+                      "tertiary-fixed": "#ffd8ed",
+                      "on-secondary-container": "#586377",
+                      "on-secondary-fixed": "#111c2c",
+                      "outline": "#73796a",
+                      "on-error": "#ffffff",
+                      "tertiary-container": "#cd79b1",
+                      "on-tertiary-fixed-variant": "#732c5f",
+                      "surface-container": "#edefe4",
+                      "on-tertiary-container": "#541044",
+                      "tech-slate": "#2D3748",
+                      "on-primary-container": "#173400",
+                      "nature-green": "#74A14E",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#d5e0f7",
+                      "on-surface": "#1a1c16",
+                      "on-primary-fixed-variant": "#295003",
+                      "secondary-fixed": "#d8e3fa",
+                      "text-muted": "#718096",
+                      "surface-tint": "#40691d",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#a4d47b",
+                      "on-tertiary-fixed": "#3b002f",
+                      "primary-fixed": "#c0f194",
+                      "tertiary-fixed-dim": "#ffade1",
+                      "secondary-fixed-dim": "#bcc7dd",
+                      "primary-container": "#74a14e",
+                      "surface": "#f9faf0",
+                      "inverse-surface": "#2f312a",
+                      "surface-variant": "#e2e3d9",
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#0c2000",
+                      "surface-bright": "#f9faf0",
+                      "on-secondary-fixed-variant": "#3c475a",
+                      "on-secondary": "#ffffff",
+                      "inverse-on-surface": "#f0f2e7",
+                      "border-subtle": "#E2E8F0",
+                      "surface-container-low": "#f3f5ea",
+                      "on-background": "#1a1c16",
+                      "tertiary": "#8f4478",
+                      "background": "#f9faf0",
+                      "surface-container-high": "#e8e9df",
+                      "primary": "#40691d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "80px",
+                      "container-max": "1200px",
+                      "card-padding": "32px",
+                      "gutter": "24px",
+                      "margin-page": "32px"
+              },
+              "fontFamily": {
+                      "h2": ["Work Sans"],
+                      "body-md": ["Inter"],
+                      "label-caps": ["Lexend"],
+                      "h3": ["Work Sans"],
+                      "h1": ["Work Sans"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "h2": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 border-b border-outline-variant/30 shadow-sm backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-margin-page py-4 max-w-container-max mx-auto">
+<a class="font-h3 text-h3 font-bold text-primary tracking-tight" href="#">Fabio Piana</a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 transition-all duration-200 px-3 py-2 rounded-DEFAULT font-label-caps text-label-caps" href="index.html">Home</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-semibold hover:bg-primary/5 transition-all duration-200 px-3 py-2 rounded-DEFAULT font-label-caps text-label-caps" href="#">Esperienze</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 transition-all duration-200 px-3 py-2 rounded-DEFAULT font-label-caps text-label-caps" href="#">Competenze</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 transition-all duration-200 px-3 py-2 rounded-DEFAULT font-label-caps text-label-caps" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 transition-all duration-200 px-3 py-2 rounded-DEFAULT font-label-caps text-label-caps" href="#">Contatti</a>
+</div>
+<button class="hidden md:block bg-nature-green text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:bg-primary transition-colors shadow-sm active:scale-95 transition-transform">Scarica CV</button>
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[100px]">
+<!-- Hero & Overview -->
+<section class="max-w-container-max mx-auto px-margin-page py-section-gap">
+<div class="mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full mb-6">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Esperienza Formativa</span>
+</div>
+<h1 class="font-h1 text-h1 text-on-surface mb-6">Maestro Tennis - Leadership &amp; Gestione</h1>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<div class="bg-surface-container-lowest rounded-xl p-card-padding shadow-sm border border-outline-variant/30">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Responsabile della formazione sportiva e dell'animazione per gruppi giovanili. Ho gestito l'organizzazione di tornei, l'arbitraggio e la pianificazione giornaliera delle attività, sviluppando doti di leadership, gestione del tempo e mediazione dei conflitti in contesti dinamici.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-4">
+<div class="bg-surface-container-low rounded-xl p-6 border border-outline-variant/20">
+<h3 class="font-h3 text-h3 text-on-surface mb-4">Competenze Sviluppate</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-surface-container-highest text-on-surface rounded-full font-label-caps text-label-caps border border-outline-variant/50">Leadership</span>
+<span class="px-4 py-2 bg-surface-container-highest text-on-surface rounded-full font-label-caps text-label-caps border border-outline-variant/50">Gestione del Tempo</span>
+<span class="px-4 py-2 bg-surface-container-highest text-on-surface rounded-full font-label-caps text-label-caps border border-outline-variant/50">Mediazione</span>
+<span class="px-4 py-2 bg-surface-container-highest text-on-surface rounded-full font-label-caps text-label-caps border border-outline-variant/50">Pianificazione</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodologies -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-page">
+<h2 class="font-h2 text-h2 text-on-surface mb-12 text-center">Metodologie di Allenamento</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest rounded-xl p-card-padding shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-3">Pianificazione Strutturata</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Sviluppo di programmi di allenamento progressivi, bilanciando preparazione tecnica, atletica e momenti di recupero per massimizzare le performance.
+                        </p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-card-padding shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-3">Gestione Dinamica del Gruppo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Tecniche di animazione e leadership per mantenere alto il coinvolgimento, gestendo dinamiche relazionali in gruppi eterogenei di giovani atleti.
+                        </p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-card-padding shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-3">Analisi e Arbitraggio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Organizzazione e supervisione di tornei, garantendo il rispetto delle regole e sviluppando capacità decisionali rapide e imparziali sotto pressione.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="max-w-container-max mx-auto px-margin-page py-section-gap">
+<h2 class="font-h2 text-h2 text-on-surface mb-12">Galleria Fotografica</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[250px]">
+<div class="md:col-span-8 md:row-span-2 rounded-xl overflow-hidden relative group">
+<img alt="Tennis training session" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A dynamic, high-quality photograph of a sunny outdoor clay tennis court during a training session. A professional tennis coach is demonstrating a serve to a group of attentive young athletes. The lighting is bright and natural, casting crisp shadows that emphasize the texture of the red clay. The scene conveys energetic sportsmanship and structured learning, aligning perfectly with a modern, clean Nature-Tech aesthetic. The colors feature vibrant greens from the surrounding environment contrasting with the terracotta court." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6n0tIvUqOlFLLtK8ArM2Kbl8icpOSFZDKzFSczxWLo055KNe2EkqLgF3CKp6iPXMLFcJG7I-aCuJ7JYahYhWHl2Ux-j6v0U6CjTEGauQGaQg6ngg3Qdqi_8fvt0K_3EU6AKpdxGqJM5dtFnGc-iPyqXs90bIkQyW3P6QwVUanbawoSI4h7cOFJMQiYVP-pY_MZfUfscMkPUJwzKVUd0kGN87gQ5HRKJhSdMwd-PNezXw9_WLoIhok4eDXiOsSfYKlTKvQNySXgTE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-body-md text-body-md font-semibold">Sessione di allenamento intensivo</p>
+</div>
+</div>
+<div class="md:col-span-4 rounded-xl overflow-hidden relative group">
+<img alt="Tennis equipment" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A beautifully composed, close-up shot of professional tennis equipment resting on a bright, minimalist surface. Several vibrant yellow tennis balls sit neatly beside a modern, high-tech carbon fiber tennis racket. The lighting is soft and studio-like, highlighting the texture of the felt and the sleek lines of the racket frame. The overall mood is precise, technical, and clean, perfectly fitting a corporate engineering and sports hybrid aesthetic with a light, airy palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ6zLqGp8MFMjpthf5nlddkeesF8yxC6XurNFJbVNcP7eaRkDxL_XXL_hMO7nq64IStN9qX0aJ38rLIByziWv1w-WeQBvv_84oOXG6cqlZEPZhQ5p68cMY9qcpK61J-xMudlrf8aNs2WjLy8qklCq0dYnbX99_zqv8j6E-Up9C6-ui9nnCAfUJDB2_sun6AVhJwUfS-e-F-bJfJJ5c6y50hOl-TyLVv6XhPHyz675cdthKQGzmhbnmfvF6SeY1a_gzR2GxLYosHKo"/>
+</div>
+<div class="md:col-span-4 rounded-xl overflow-hidden relative group">
+<img alt="Tennis court lines" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An abstract, top-down perspective photograph focusing on the pristine white boundary lines of a deep blue hard tennis court. The image relies heavily on strict geometry and fixed grid concepts, evoking an engineering discipline applied to sports. The lighting is stark and clear, creating a high-contrast, minimalist composition. The mood is structured, reliable, and precise, utilizing a modern corporate visual language with plenty of negative space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvsAHcsYm1PH4M4rkS7e0aITvuCFDn8yQXvTnubDUL7zjU7yjGBblm4vxb2dsXqqc3hJQqcpO5liiv_qRnjFNRw6eOMwViBUCOVo4sftTD1nIQ0faq6grWvemVZsdluy8Y62LLQfgoAYDP-UnrxXGl-XwUPDg6E8nmWSPuBRwLS0dmdP4NVvNAUaaCU6GbIJXH4QE93gN2H7zjwc8VbeukMMp8UsNfMNI3fMhLBKdhMsHV0nen3DvDntIWkr1yfb976cG03b1qxXI"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-page max-w-container-max mx-auto gap-gutter">
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">© 2024 Fabio Piana. Precisione Tecnica, Spirito Naturale.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">LinkedIn</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">GitHub</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">Email</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary hover:underline decoration-nature-green underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">Privacy Policy</a>
+</div>
+<div class="font-h3 text-h3 font-bold text-primary text-center md:text-right">Fabio Piana</div>
+</div>
+</footer>
+</body></html>
